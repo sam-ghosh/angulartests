@@ -1,0 +1,24 @@
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>Angular.js Example</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <script>
+        function NameCtrl($scope){
+            $scope.firstName = "John";
+            $scope.lastName = "Smith2";
+        }
+    </script>
+</head>
+
+
+<body ng-controller="NameCtrl">
+First name:<input ng-model="firstName" type="text"/>
+<br>
+Last name:<input ng-model="lastName" type="text"/>
+<br>
+Hello {{firstName}} {{lastName}}
+</body>
+</html>
